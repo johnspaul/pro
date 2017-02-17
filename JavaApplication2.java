@@ -26,7 +26,7 @@ public class JavaApplication2 {
                               str=br.readLine();
                                 tokens = str.split("[ C]");
                              System.out.println(tokens[0]+"\n"+tokens[1]+"\n"+tokens[2]+"\n"+tokens[3]+"\n"+tokens[4]+"\n"+tokens[5]+"\n");
-//                          System.out.println
+                          System.out.println(str);
                           }
                           }
                 //fis.close();

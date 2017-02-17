@@ -18,20 +18,21 @@ public class TimerCollect extends TimerTask {
     TimerTask tasknew,taskfile;
     Timer timer;
     int tasktype=0;
-public TimerCollect(int type)
+    int port;
+public TimerCollect(int type,int p)
 {
     tasktype=type;
-    
+   port=p;
 }
     @Override
     public void run() {
         //System.out.println("Timer task started at:");
-        if(tasktype==1)
+     /*   if(tasktype==1)
         {
             //System.out.println(tasktype);
-        count_of_select = db.queryLogCount("select");
-        count_of_insert = db.queryLogCount("insert");
-        count_of_update = db.queryLogCount("update");
+        count_of_select = db.queryLogCount("select",port);
+        count_of_insert = db.queryLogCount("insert",port);
+        count_of_update = db.queryLogCount("update",port);
         count_of_slow_select = db.querySlowLogCount("select");
         count_of_slow_insert = db.querySlowLogCount("insert");
         count_of_slow_update = db.querySlowLogCount("update");
@@ -40,15 +41,16 @@ public TimerCollect(int type)
          
         db.insertion(count_of_select, count_of_insert, count_of_update, count_of_slow_select, count_of_slow_insert);
         }
-        else
+        else*/
         {
             //System.out.println("hi");
+            //System.out.println("timer:"+port);
             try{
-            count_of_select=fh.readGeneralLog("select");
-            count_of_insert=fh.readGeneralLog("insert");
-            count_of_update =fh.readGeneralLog("update");
-            count_of_slow_select = fh.readSlowLog("select");
-            count_of_slow_insert = fh.readSlowLog("insert");
+            count_of_select=fh.readGeneralLog("select",port);
+            count_of_insert=fh.readGeneralLog("insert",port);
+            count_of_update =fh.readGeneralLog("update",port);
+            count_of_slow_select = fh.readSlowLog("select",port);
+            count_of_slow_insert = fh.readSlowLog("insert",port);
             //System.out.println("count of select queries: "+count_of_select+"\ncount of insert queries:  "+count_of_insert+"\ncount of update queries: "+count_of_update+"\ncount of s"
               // + "low select queries"+count_of_slow_select+"\ncount of slow insert queries"+count_of_slow_insert);
             db.insertion(count_of_select, count_of_insert, count_of_update, count_of_slow_select, count_of_slow_insert);
@@ -59,12 +61,13 @@ public TimerCollect(int type)
         }
     }
 
-    public void Tasker() {
+    public void Tasker(int p) {
         try {
+            //System.out.println("tasker:"+p);
             // creating timer task, timer
-
+           
             //TimerTask tasknew = new TimerTask();
-            tasknew = new TimerCollect(1);
+            tasknew = new TimerCollect(1,p);
             timer = new Timer();
             timer.scheduleAtFixedRate(tasknew, new java.util.Date(), 60000);
 
@@ -75,9 +78,10 @@ public TimerCollect(int type)
         // scheduling the task at fixed rate
         //timer.scheduleAtFixedRate(tasknew,new java.util.Date(),1000);      
     }
-    public void taskerFile()
+    public void taskerFile(int p)
     {
-        taskfile=new TimerCollect(0);
+        port=p;
+        taskfile=new TimerCollect(0,p);
         timer=new Timer();
         timer.scheduleAtFixedRate(taskfile, new java.util.Date(), 60000);
     }

@@ -35,13 +35,15 @@ public class FileHandler {
         }
     }
 
-    public int readGeneralLog(String type) throws Exception {
-        
+    public int readGeneralLog(String type,int port) throws Exception {
+       // System.out.println("general log file:"+port);
         String[] tokens, qtoken;
         tokens = new String[10];
         int count = 0;
-        String fileName = db.show("general_log_file");
-        String link = new String("C:\\ProgramData\\MySQL\\MySQL Server 5.7\\Data\\" + fileName);
+        String basedir;
+        String fileName = db.show("general_log_file",port);
+        String link = new String(db.show("datadir", port)+ fileName);
+       
         File file = new File(link);
         String str = new String();
         //try (FileInputStream fis = new FileInputStream(file))
@@ -58,6 +60,7 @@ public class FileHandler {
                 if (str.contains(type)) {
                     qtoken = tokens[3].split("\\s+", 2);
                     if (qtoken[0].equals(type)) {
+                        
                         count++;
                         //System.out.println(str + tokens[3]);
                     }
@@ -84,12 +87,12 @@ public class FileHandler {
     return count;
     }
 
-     public int readSlowLog(String type) throws Exception {
+     public int readSlowLog(String type,int port) throws Exception {
         
         String[] tokens, qtoken;
         tokens = new String[10];
         int count = 0;
-        String fileName = db.show("slow_query_log_file");
+        String fileName = db.show("slow_query_log_file",port);
         String link = new String("C:\\ProgramData\\MySQL\\MySQL Server 5.7\\Data\\" + fileName);
         File file = new File(link);
         String str = new String();
@@ -118,6 +121,33 @@ public class FileHandler {
         }
     return count;
     }
+     
+   /*  public void findFile(String name,File file)
+    {
+        File[] list = file.listFiles();
+        if(list!=null)
+        for (File fil : list)
+        {
+            if (fil.isDirectory())
+            {
+                findFile(name,fil);
+            }
+            else if (name.equalsIgnoreCase(fil.getName()))
+            {
+                System.out.println(fil.getParentFile());
+            }
+        }
+    }
+    public static void main(String[] args) 
+    {
+        FindFile ff = new FindFile();
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Enter the file to be searched.. " );
+        String name = scan.next();
+        System.out.println("Enter the directory where to search ");
+        String directory = scan.next();
+        ff.findFile(name,new File(directory));
+    }
     
-    
+    */
 }
