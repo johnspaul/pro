@@ -11,11 +11,43 @@ public class DatabaseHandler {
        Statement stmt;
        ResultSet rs;
        Config cf;
-   
- public int getSlowQueryTime()throws Exception
+       int port;
+       public int getPortCount()throws Exception
+       {
+           System.out.println("inside");
+           int i=0;
+           stmt=open(3306);
+           rs=stmt.executeQuery("select count(*) from mysql_versions");
+           while(rs.next())
+           {
+               i=rs.getInt(1);
+           }
+           //System.out.println(i);
+           return i;
+       }
+  public String[] getPorts()throws Exception
+  {
+      int i=0;
+      String str[]=new String[20];
+      stmt=open(3306);
+      rs=stmt.executeQuery("select * from mysql_versions");
+      while(rs.next())
+      {
+          str[i]=rs.getString(1);
+          i++;
+         // System.out.println(str[i]);
+      }
+      close();
+      return str;
+  }
+  public void getDataDir(int port)
+  {
+      
+  }
+ public int getSlowQueryTime(int port)throws Exception
       {
         int time = 0;
-        stmt = open();
+        stmt = open(port);
         rs = stmt.executeQuery("show global variables like \"long_query_time\"");
         if (rs.next()) {
             time = rs.getInt(2);
@@ -27,7 +59,7 @@ public class DatabaseHandler {
  public void selection() {
         try {
             int time = 0;
-            stmt = open();
+            stmt = open(3306);
             rs = stmt.executeQuery(" select * from log_report where id=(select max(id) from log_report)");
             if (rs.next()) {
                 
@@ -46,7 +78,7 @@ public class DatabaseHandler {
  public void insertion(int sel, int ins, int updt, int slow, int supdt) {
         try {
             String sql;
-            stmt = open();
+            stmt = open(3306);
             sql = "insert into log_report(select_queries,insert_queries,update_queries,slow_queries,slow_update) values(" + sel + "," + ins + "," + updt + "," + slow + "," + supdt + ")";
            
             stmt.executeUpdate(sql);
@@ -56,14 +88,17 @@ public class DatabaseHandler {
         }
         }
         
- public Statement open() {
+ public Statement open(int port) {
+     String connect=new String();
         try {
-
+            String sport=Integer.toString(port);
+           connect="jdbc:mysql://localhost:"+sport+"/mysql?useSSL=false";
+          //connect="jdbc:mysql://localhost:3306/mysql?useSSL=false";
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?useSSL=false", "root", "root");
+            con = DriverManager.getConnection(connect, "root", "root");
             stmt = con.createStatement();
         } catch (Exception e) {
-            System.out.println("not connecting");
+            System.out.println("not connecting"+e+"   "+connect);
         }
         return stmt;
     }
@@ -78,18 +113,18 @@ public class DatabaseHandler {
      }
  
      
- public void set(String var,String stat) throws Exception
+ public void set(String var,String stat,int port) throws Exception
    {   
-       stmt = open();
+       stmt = open(port);
        stmt.executeQuery("SET GLOBAL " + var + "='" + stat + "'");
        close();
        
    }
    
- public String show(String var) throws Exception
+ public String show(String var,int port) throws Exception
       {
           String status = new String();
-          stmt = open();
+          stmt = open(port);
           rs = stmt.executeQuery("show variables like \"" + var + "\"");
 
           while (rs.next()) {
@@ -101,7 +136,7 @@ public class DatabaseHandler {
 
    }
    
- public int queryLogCount(String type)
+ /*public int queryLogCount(String type)
     {
         int count = 0;
         Statement stmt, stmt3;
@@ -209,12 +244,12 @@ public class DatabaseHandler {
             System.err.println("Exception: " + e.getMessage());
         }
         return count;
-    }
-     public void loggedin()
+    }*/
+     public void loggedin(int port)
      {
          try{
          String sql,user;
-         stmt=open();
+         stmt=open(port);
          sql="select * from general_log where event_time =(select MAX(event_time) from general_log where command_type like \"connect\") and command_type like \"connect\"";
          rs=stmt.executeQuery(sql);
          while(rs.next())
@@ -230,7 +265,7 @@ public class DatabaseHandler {
              
          }
      }
- public void querySlowLog(String type,int log)
+/* public void querySlowLog(String type,int log)
     {
        
         Statement stmt3;
@@ -271,5 +306,5 @@ public class DatabaseHandler {
             System.err.println("Exception: " + e.getMessage());
         }
 
-    }
+    }*/
  }

@@ -1,0 +1,408 @@
+
+Active Connections
+
+  Proto  Local Address          Foreign Address        State
+  TCP    0.0.0.0:80             johns-pt1490:0         LISTENING
+ Can not obtain ownership information
+  TCP    0.0.0.0:135            johns-pt1490:0         LISTENING
+  RpcSs
+ [svchost.exe]
+  TCP    0.0.0.0:445            johns-pt1490:0         LISTENING
+ Can not obtain ownership information
+  TCP    0.0.0.0:623            johns-pt1490:0         LISTENING
+ [LMS.exe]
+  TCP    0.0.0.0:1110           johns-pt1490:0         LISTENING
+ [avp.exe]
+  TCP    0.0.0.0:1801           johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    0.0.0.0:2103           johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    0.0.0.0:2105           johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    0.0.0.0:2107           johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    0.0.0.0:3306           johns-pt1490:0         LISTENING
+ [mysqld.exe]
+  TCP    0.0.0.0:3307           johns-pt1490:0         LISTENING
+ [mysqld-nt.exe]
+  TCP    0.0.0.0:3389           johns-pt1490:0         LISTENING
+  CryptSvc
+ [svchost.exe]
+  TCP    0.0.0.0:5800           johns-pt1490:0         LISTENING
+ [tvnserver.exe]
+  TCP    0.0.0.0:5900           johns-pt1490:0         LISTENING
+ [tvnserver.exe]
+  TCP    0.0.0.0:16992          johns-pt1490:0         LISTENING
+ [LMS.exe]
+  TCP    0.0.0.0:49152          johns-pt1490:0         LISTENING
+ [wininit.exe]
+  TCP    0.0.0.0:49153          johns-pt1490:0         LISTENING
+  EventLog
+ [svchost.exe]
+  TCP    0.0.0.0:49154          johns-pt1490:0         LISTENING
+  Schedule
+ [svchost.exe]
+  TCP    0.0.0.0:49155          johns-pt1490:0         LISTENING
+ [spoolsv.exe]
+  TCP    0.0.0.0:49156          johns-pt1490:0         LISTENING
+ [lsass.exe]
+  TCP    0.0.0.0:49171          johns-pt1490:0         LISTENING
+ [lsass.exe]
+  TCP    0.0.0.0:49174          johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    0.0.0.0:49219          johns-pt1490:0         LISTENING
+ Can not obtain ownership information
+  TCP    0.0.0.0:49221          johns-pt1490:0         LISTENING
+  PolicyAgent
+ [svchost.exe]
+  TCP    0.0.0.0:64670          johns-pt1490:0         LISTENING
+ [netsession_win.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:49799     TIME_WAIT
+  TCP    127.0.0.1:1110         johns-pt1490:49828     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:49834     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:49848     TIME_WAIT
+  TCP    127.0.0.1:1110         johns-pt1490:49850     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:49852     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:49854     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:49861     TIME_WAIT
+  TCP    127.0.0.1:1110         johns-pt1490:49869     TIME_WAIT
+  TCP    127.0.0.1:1110         johns-pt1490:49874     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:61451     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:64668     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:65071     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:65073     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1110         johns-pt1490:65098     ESTABLISHED
+ [avp.exe]
+  TCP    127.0.0.1:1550         johns-pt1490:0         LISTENING
+ [klnagent.exe]
+  TCP    127.0.0.1:1551         johns-pt1490:0         LISTENING
+ [klnagent.exe]
+  TCP    127.0.0.1:3306         johns-pt1490:49880     TIME_WAIT
+  TCP    127.0.0.1:3306         johns-pt1490:49881     TIME_WAIT
+  TCP    127.0.0.1:3306         johns-pt1490:49882     ESTABLISHED
+ [mysqld.exe]
+  TCP    127.0.0.1:3306         johns-pt1490:49885     ESTABLISHED
+ [mysqld.exe]
+  TCP    127.0.0.1:9421         johns-pt1490:0         LISTENING
+ [netsession_win.exe]
+  TCP    127.0.0.1:30523        johns-pt1490:0         LISTENING
+ [klnagent.exe]
+  TCP    127.0.0.1:49218        johns-pt1490:0         LISTENING
+ [klnagent.exe]
+  TCP    127.0.0.1:49801        johns-pt1490:nfsd-status  TIME_WAIT
+  TCP    127.0.0.1:49811        johns-pt1490:nfsd-status  TIME_WAIT
+  TCP    127.0.0.1:49817        johns-pt1490:nfsd-status  TIME_WAIT
+  TCP    127.0.0.1:49821        johns-pt1490:nfsd-status  TIME_WAIT
+  TCP    127.0.0.1:49828        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:49834        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:49850        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:49852        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:49854        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:49860        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49863        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49864        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49865        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49866        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49867        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49868        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49871        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49872        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49873        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49874        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:49876        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49877        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49879        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49880        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49881        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49882        johns-pt1490:3306      ESTABLISHED
+ [java.exe]
+  TCP    127.0.0.1:49883        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49884        johns-pt1490:3306      TIME_WAIT
+  TCP    127.0.0.1:49885        johns-pt1490:3306      ESTABLISHED
+ [java.exe]
+  TCP    127.0.0.1:49951        johns-pt1490:0         LISTENING
+ [LMS.exe]
+  TCP    127.0.0.1:51390        johns-pt1490:0         LISTENING
+ [netbeans64.exe]
+  TCP    127.0.0.1:61451        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:64668        johns-pt1490:nfsd-status  ESTABLISHED
+ [netsession_win.exe]
+  TCP    127.0.0.1:65071        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:65073        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    127.0.0.1:65098        johns-pt1490:nfsd-status  ESTABLISHED
+ [chrome.exe]
+  TCP    192.168.56.1:139       johns-pt1490:0         LISTENING
+ Can not obtain ownership information
+  TCP    192.168.99.1:139       johns-pt1490:0         LISTENING
+ Can not obtain ownership information
+  TCP    192.168.214.179:139    johns-pt1490:0         LISTENING
+ Can not obtain ownership information
+  TCP    192.168.214.179:49812  192.168.100.100:3128   TIME_WAIT
+  TCP    192.168.214.179:49818  192.168.100.100:3128   TIME_WAIT
+  TCP    192.168.214.179:49822  192.168.100.100:3128   TIME_WAIT
+  TCP    192.168.214.179:49823  192.168.112.160:8027   ESTABLISHED
+ [dcondemand.exe]
+  TCP    192.168.214.179:49829  192.168.100.100:3128   ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:49835  192.168.100.100:3128   ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:49851  216.52.72.221:https    ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:49853  216.52.72.221:https    ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:49855  216.52.72.221:https    ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:49875  192.168.100.100:3128   ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:49878  win2k12master:microsoft-ds  ESTABLISHED
+ Can not obtain ownership information
+  TCP    192.168.214.179:61452  192.168.100.100:3128   ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:64669  192.168.100.100:3128   ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:65072  192.168.100.100:3128   ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:65074  192.168.100.100:3128   ESTABLISHED
+ [avp.exe]
+  TCP    192.168.214.179:65099  192.168.100.100:3128   ESTABLISHED
+ [avp.exe]
+  TCP    [::]:80                johns-pt1490:0         LISTENING
+ Can not obtain ownership information
+  TCP    [::]:135               johns-pt1490:0         LISTENING
+  RpcSs
+ [svchost.exe]
+  TCP    [::]:445               johns-pt1490:0         LISTENING
+ Can not obtain ownership information
+  TCP    [::]:623               johns-pt1490:0         LISTENING
+ [LMS.exe]
+  TCP    [::]:1110              johns-pt1490:0         LISTENING
+ [avp.exe]
+  TCP    [::]:1801              johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    [::]:2103              johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    [::]:2105              johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    [::]:2107              johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    [::]:3306              johns-pt1490:0         LISTENING
+ [mysqld.exe]
+  TCP    [::]:3389              johns-pt1490:0         LISTENING
+  CryptSvc
+ [svchost.exe]
+  TCP    [::]:16992             johns-pt1490:0         LISTENING
+ [LMS.exe]
+  TCP    [::]:49152             johns-pt1490:0         LISTENING
+ [wininit.exe]
+  TCP    [::]:49153             johns-pt1490:0         LISTENING
+  EventLog
+ [svchost.exe]
+  TCP    [::]:49154             johns-pt1490:0         LISTENING
+  Schedule
+ [svchost.exe]
+  TCP    [::]:49155             johns-pt1490:0         LISTENING
+ [spoolsv.exe]
+  TCP    [::]:49156             johns-pt1490:0         LISTENING
+ [lsass.exe]
+  TCP    [::]:49171             johns-pt1490:0         LISTENING
+ [lsass.exe]
+  TCP    [::]:49174             johns-pt1490:0         LISTENING
+ [mqsvc.exe]
+  TCP    [::]:49219             johns-pt1490:0         LISTENING
+ Can not obtain ownership information
+  TCP    [::]:49221             johns-pt1490:0         LISTENING
+  PolicyAgent
+ [svchost.exe]
+  TCP    [::1]:3306             johns-pt1490:63961     ESTABLISHED
+ [mysqld.exe]
+  TCP    [::1]:30523            johns-pt1490:0         LISTENING
+ [klnagent.exe]
+  TCP    [::1]:49218            johns-pt1490:0         LISTENING
+ [klnagent.exe]
+  TCP    [::1]:49896            johns-pt1490:0         LISTENING
+ [jhi_service.exe]
+  TCP    [::1]:52730            johns-pt1490:52732     ESTABLISHED
+ [LMS.exe]
+  TCP    [::1]:52732            johns-pt1490:52730     ESTABLISHED
+ [LMS.exe]
+  TCP    [::1]:63961            johns-pt1490:3306      ESTABLISHED
+ [mysql.exe]
+  UDP    0.0.0.0:123            *:*                    
+  W32Time
+ [svchost.exe]
+  UDP    0.0.0.0:500            *:*                    
+  IKEEXT
+ [svchost.exe]
+  UDP    0.0.0.0:3389           *:*                    
+  CryptSvc
+ [svchost.exe]
+  UDP    0.0.0.0:4500           *:*                    
+  IKEEXT
+ [svchost.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5353           *:*                    
+ [chrome.exe]
+  UDP    0.0.0.0:5355           *:*                    
+  Dnscache
+ [svchost.exe]
+  UDP    0.0.0.0:15000          *:*                    
+ [klnagent.exe]
+  UDP    0.0.0.0:15001          *:*                    
+ [klnagent.exe]
+  UDP    0.0.0.0:58173          *:*                    
+ [netsession_win.exe]
+  UDP    0.0.0.0:58174          *:*                    
+ [netsession_win.exe]
+  UDP    127.0.0.1:1900         *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:49924        *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    127.0.0.1:53126        *:*                    
+ [lsass.exe]
+  UDP    127.0.0.1:54565        *:*                    
+ [dcagenttrayicon.exe]
+  UDP    127.0.0.1:54617        *:*                    
+ [netsession_win.exe]
+  UDP    127.0.0.1:62232        *:*                    
+ [svchost.exe]
+  UDP    127.0.0.1:62639        *:*                    
+ [netsession_win.exe]
+  UDP    127.0.0.1:64286        *:*                    
+ [Explorer.EXE]
+  UDP    127.0.0.1:65117        *:*                    
+  LanmanWorkstation
+ [svchost.exe]
+  UDP    192.168.56.1:137       *:*                    
+ Can not obtain ownership information
+  UDP    192.168.56.1:138       *:*                    
+ Can not obtain ownership information
+  UDP    192.168.56.1:1900      *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.56.1:2177      *:*                    
+  QWAVE
+ [svchost.exe]
+  UDP    192.168.56.1:49922     *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.99.1:137       *:*                    
+ Can not obtain ownership information
+  UDP    192.168.99.1:138       *:*                    
+ Can not obtain ownership information
+  UDP    192.168.99.1:1900      *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.99.1:2177      *:*                    
+  QWAVE
+ [svchost.exe]
+  UDP    192.168.99.1:49923     *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.214.179:137    *:*                    
+ Can not obtain ownership information
+  UDP    192.168.214.179:138    *:*                    
+ Can not obtain ownership information
+  UDP    192.168.214.179:1900   *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    192.168.214.179:2177   *:*                    
+  QWAVE
+ [svchost.exe]
+  UDP    192.168.214.179:49921  *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::]:123               *:*                    
+  W32Time
+ [svchost.exe]
+  UDP    [::]:500               *:*                    
+  IKEEXT
+ [svchost.exe]
+  UDP    [::]:3389              *:*                    
+  CryptSvc
+ [svchost.exe]
+  UDP    [::]:4500              *:*                    
+  IKEEXT
+ [svchost.exe]
+  UDP    [::]:5353              *:*                    
+ [chrome.exe]
+  UDP    [::]:5353              *:*                    
+ [chrome.exe]
+  UDP    [::]:5353              *:*                    
+ [chrome.exe]
+  UDP    [::]:5355              *:*                    
+  Dnscache
+ [svchost.exe]
+  UDP    [::]:15000             *:*                    
+ [klnagent.exe]
+  UDP    [::1]:1900             *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [::1]:49920            *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::49e7:1fe8:f35a:3fb9%13]:546  *:*                    
+  Dhcp
+ [svchost.exe]
+  UDP    [fe80::49e7:1fe8:f35a:3fb9%13]:1900  *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::49e7:1fe8:f35a:3fb9%13]:2177  *:*                    
+  QWAVE
+ [svchost.exe]
+  UDP    [fe80::49e7:1fe8:f35a:3fb9%13]:49919  *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::792c:ee19:82ac:a1a1%5]:546  *:*                    
+  Dhcp
+ [svchost.exe]
+  UDP    [fe80::792c:ee19:82ac:a1a1%5]:1900  *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::792c:ee19:82ac:a1a1%5]:2177  *:*                    
+  QWAVE
+ [svchost.exe]
+  UDP    [fe80::792c:ee19:82ac:a1a1%5]:49917  *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::953c:c7f2:93f2:9433%12]:546  *:*                    
+  Dhcp
+ [svchost.exe]
+  UDP    [fe80::953c:c7f2:93f2:9433%12]:1900  *:*                    
+  SSDPSRV
+ [svchost.exe]
+  UDP    [fe80::953c:c7f2:93f2:9433%12]:2177  *:*                    
+  QWAVE
+ [svchost.exe]
+  UDP    [fe80::953c:c7f2:93f2:9433%12]:49918  *:*                    
+  SSDPSRV
+ [svchost.exe]
